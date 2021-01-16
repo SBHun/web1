@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -12,40 +12,67 @@
 </script>
     <title>Book List</title>
     <meta charset="utf-8">
+    <style>
+    body{
+      margin: 0;
+    }
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    h1{
+      text-align: center;
+      font-size: 50px;
+      margin:10px;
+      border-bottom: 2px black solid;
+      margin: 0;
+      padding: 10px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
+      border-bottom: 2px black solid;
+      padding: 10px;
+    }
+
+    @media(max-width:600px) {
+      h1{
+        font-size:30px;
+      }
+    }
+    </style>
+
   </head>
   <body>
-     <h1 style="text-align:center; background:brown;">이번달 읽을 책 목록</h1>
-     <h3 style="text-align:center; background:brown;">일과영성, <strong><u>에이트</u></strong>, 더 해빙</h3>
-     <br>
-   <h4><a href="index.html">Main</a></h4>
-   <ol>
-     <li><a href="1.html">일과 영성 <br><img src="work.jpg" alt="책표지" width="20%" title="일과영성 표지"></a></li>
-     <li><a href="2.html">에이트 <br><img src="eight.jpg" alt="책표지" width="20%" title="에이트 표지"></a></li>
-     <li><a href="3.html">더 해빙 <br><img src="having.jpg" alt="책표지" width="20%" title="더 해빙 표지"></a></li>
-   </ol>
-   <br>
-   <p>
-     <div id="disqus_thread"></div>
-     <script>
-         /**
-         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-         /*
-         var disqus_config = function () {
-         this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-         };
-         */
-         (function() { // DON'T EDIT BELOW THIS LINE
-         var d = document, s = d.createElement('script');
-         s.src = 'https://book-list.disqus.com/embed.js';
-         s.setAttribute('data-timestamp', +new Date());
-         (d.head || d.body).appendChild(s);
-         })();
-     </script>
-     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-   </p>
-   <!--Start of Tawk.to Script-->
+    <h1><a href="index.html">1월 책 목록</a></h1>
+    <div id="grid">
+      <div><a href="1.html">일과 영성 <br><img src="work.jpg" alt="책표지" width="50px" title="일과영성 표지"></a></div>
+      <div><a href="2.html">에이트 <br><img src="eight.jpg" alt="책표지" width="50px" title="에이트 표지"></a></div>
+      <div><a href="3.html">더 해빙 <br><img src="having.jpg" alt="책표지" width="50px" title="더 해빙 표지"></a></div>
+    </div>
+    <p>
+   <div id="disqus_thread"></div>
+   <script>
+       /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+       /*
+       var disqus_config = function () {
+       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+       (function() { // DON'T EDIT BELOW THIS LINE
+       var d = document, s = d.createElement('script');
+       s.src = 'https://book-list.disqus.com/embed.js';
+       s.setAttribute('data-timestamp', +new Date());
+       (d.head || d.body).appendChild(s);
+       })();
+   </script>
+   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ </p>
+ <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
